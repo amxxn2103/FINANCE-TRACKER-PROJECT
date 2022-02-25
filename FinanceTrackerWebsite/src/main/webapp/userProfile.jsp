@@ -56,7 +56,7 @@ value='${profile.surname}' />" class="form-control"
 						<textarea type="text" class="form-control" name="bio">${profile.bio}</textarea>
 					</fieldset>
 										<div class="col d-flex justify-content-center">
-															<button type="submit" class="btn btn-success">Save</button>
+															<button id="savebutton" type="submit" class="btn btn-success">Save</button>
 										
 										</div>
 					
@@ -70,7 +70,7 @@ value='${profile.iduser}' />" type="submit"
 					</div>
 					<div class="col d-flex justify-content-center"
 						style="padding-bottom: 10px; padding-top: 5px">
-						<button name="iduser" type="submit" class="btn btn-danger">Delete
+						<button id="deletebutton" name="iduser" type="submit" class="btn btn-danger">Delete
 							Account</button>
 					</div>
 
