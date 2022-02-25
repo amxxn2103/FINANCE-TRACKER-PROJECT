@@ -76,7 +76,6 @@ value='${profile.iduser}' />" type="submit"
 
 
 				</form>
-				<h2>Modification Check</h2>
 			</div>
 		</div>
 	</div>
