@@ -45,6 +45,8 @@
 					<release>15</release>
 				</configuration>
 			</plugin>
+			
+			<!-- checking if push works -->
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.3</version>
