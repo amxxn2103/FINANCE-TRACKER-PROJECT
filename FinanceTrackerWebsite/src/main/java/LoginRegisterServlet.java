@@ -101,7 +101,7 @@ public class LoginRegisterServlet extends HttpServlet {
 						response.addCookie(ck);// adding cookie in the response
 
 						response.sendRedirect(
-								"http://localhost:8080/FinanceTrackerWebsite/ReturnFinanceServlet/dashboard");
+								"http://localhost:8090/FinanceTrackerWebsite/ReturnFinanceServlet/dashboard");
 
 					}
 
@@ -194,7 +194,7 @@ public class LoginRegisterServlet extends HttpServlet {
 		ck.setPath("/FinanceTrackerWebsite");
 		response.addCookie(ck);// adding cookie in the response
 		// TODO Auto-generated method stub
-		response.sendRedirect("http://localhost:8080/FinanceTrackerWebsite/login.jsp");
+		response.sendRedirect("http://localhost:8090/FinanceTrackerWebsite/login.jsp");
 	}
 
 }

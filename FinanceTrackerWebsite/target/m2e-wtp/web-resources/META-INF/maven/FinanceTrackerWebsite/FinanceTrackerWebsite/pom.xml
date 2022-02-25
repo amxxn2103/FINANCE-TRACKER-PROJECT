@@ -8,8 +8,29 @@
 	<packaging>war</packaging>
 	<name>FinTra</name>
 	<description>Finance Tracking Site</description>
+<properties>
+		<selenium.groupId>org.seleniumhq.selenium</selenium.groupId>
+    	<selenium.artifactId>selenium-java</selenium.artifactId>
+		<selenium.version>2.53.1</selenium.version>
+	
+		<testng.groupId>org.testng</testng.groupId>
+		<testng.artifactId>testng</testng.artifactId>
+		<testng.version>6.9.10</testng.version>
+	</properties>
 
 	<dependencies>
+
+		<dependency>
+		<groupId>${selenium.groupId}</groupId>
+		<artifactId>${selenium.artifactId}</artifactId>
+		<version>${selenium.version}</version>
+</dependency>
+<dependency>
+	<groupId>${testng.groupId}</groupId>
+	<artifactId>${testng.artifactId}</artifactId>
+	<version>${testng.version}</version>
+    <scope>test</scope>
+</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -39,14 +60,13 @@
 
 	<build>
 		<plugins>
+		<!-- checking if push works -->
 			<plugin>
-			<!-- checking if push working oni -->
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-                			<source>1.8</source>
-                			<target>1.8</target>
-            			</configuration>
+					<release>15</release>
+				</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
